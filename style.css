@@ -1,4 +1,4 @@
-/* Dark theme */
+/* Dark theme base */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,23 +6,36 @@ body {
   color: #f5f5f5;
   display: flex;
 }
+
 /* Sidebar */
 .sidebar {
   width: 70px;
-  height: 100vh;          /* full height */
+  height: 100vh;          /* Full height */
   background: #1e1e1e;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  position: fixed;        /* stays on the left */
+  position: fixed;        /* Stay on left */
   top: 0;
   left: 0;
 }
 
-/* Push main content aside */
+.sidebar a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 20px 0;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #4db8ff;
+}
+
+/* Main content */
 .main {
-  margin-left: 70px;      /* same as sidebar width */
+  margin-left: 70px;      /* Same as sidebar width */
   flex: 1;
   padding: 50px;
   text-align: center;
