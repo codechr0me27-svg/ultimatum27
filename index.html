@@ -4,24 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Dark Homepage</title>
-  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="style.css?v=3">
+  <!-- Load icons from Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Homepage 👋</h1>
-    <p>Hi, I’m Morgan. Thanks for visiting!</p>
-  </header>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="tv.html" title="TV"><i class="fas fa-tv"></i></a>
+    <a href="games.html" title="Games"><i class="fas fa-gamepad"></i></a>
+    <a href="music.html" title="Music"><i class="fas fa-music"></i></a>
+    <a href="chat.html" title="Chat"><i class="fas fa-comments"></i></a>
+    <a href="apps.html" title="Apps"><i class="fas fa-th"></i></a>
+  </div>
 
-  <main>
-    <div class="button-container">
-      <a href="about.html" class="btn">About Me</a>
-      <a href="projects.html" class="btn">Projects</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </div>
-  </main>
+  <!-- Main Content -->
+  <div class="main">
+    <h1>Welcome 👋</h1>
+    <p>Search with Ultraviolet below:</p>
 
-  <footer>
-    <p>© 2025 [Your Name] — Built with ❤️ on GitHub Pages</p>
-  </footer>
+    <!-- Ultraviolet search engine -->
+    <form action="https://uvexample.com/search" method="get" class="search-bar">
+      <input type="text" name="q" placeholder="Search with Ultraviolet...">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+  </div>
 </body>
 </html>
