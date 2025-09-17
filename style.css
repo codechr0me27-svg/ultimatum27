@@ -1,45 +1,49 @@
-/* General styles */
+/* Dark theme base */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  background: #121212;
+  color: #f5f5f5;
+  text-align: center;
 }
 
 /* Header */
 header {
-  background: #007acc;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+  background: #1e1e1e;
+  padding: 50px 20px;
 }
 
-/* Sections */
-main {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
+header h1 {
+  color: #4db8ff;
+  margin-bottom: 10px;
 }
 
-section {
-  margin-bottom: 30px;
+/* Buttons */
+.button-container {
+  margin: 40px 0;
 }
 
-/* Links */
-a {
-  color: #007acc;
+.btn {
+  display: inline-block;
+  background: #4db8ff;
+  color: #121212;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 6px;
+  font-size: 18px;
   text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
 }
-a:hover {
-  text-decoration: underline;
+
+.btn:hover {
+  background: #3399ff;
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #eee;
-  margin-top: 20px;
+  background: #1e1e1e;
+  padding: 20px;
+  margin-top: 40px;
 }
