@@ -6,31 +6,23 @@ body {
   color: #f5f5f5;
   display: flex;
 }
-
 /* Sidebar */
 .sidebar {
   width: 70px;
+  height: 100vh;          /* full height */
   background: #1e1e1e;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  position: fixed;        /* stays on the left */
+  top: 0;
+  left: 0;
 }
 
-.sidebar a {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: 24px;
-  margin: 20px 0;
-  transition: color 0.3s;
-}
-
-.sidebar a:hover {
-  color: #4db8ff;
-}
-
-/* Main content */
+/* Push main content aside */
 .main {
+  margin-left: 70px;      /* same as sidebar width */
   flex: 1;
   padding: 50px;
   text-align: center;
