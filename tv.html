@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      display: flex;
+    }
+
+    /* Sidebar (reuse from homepage) */
+    .sidebar {
+      width: 80px;
+      background-color: #1f1f1f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+    .sidebar a {
+      color: #bbb;
+      text-decoration: none;
+      font-size: 32px;
+      margin: 25px 0;
+      transition: color 0.3s, transform 0.2s, text-shadow 0.2s;
+    }
+    .sidebar a:hover {
+      color: #fff;
+      transform: scale(1.2);
+      text-shadow: 0 0 10px #6a5acd;
+    }
+
+    /* Main TV area */
+    .main {
+      flex: 1;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    iframe {
+      flex: 1;
+      border: none;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <a href="tv.html" class="active"><i class="fas fa-tv"></i></a>
+    <a href="games.html"><i class="fas fa-gamepad"></i></a>
+    <a href="music.html"><i class="fas fa-music"></i></a>
+    <a href="chat.html"><i class="fas fa-comments"></i></a>
+    <a href="apps.html"><i class="fas fa-th"></i></a>
+  </div>
+
+  <div class="main">
+    <iframe src="https://www.youtube.com/embed/live_stream?channel=UC4R8DWoMoI7CAwX8_LjQHig" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
